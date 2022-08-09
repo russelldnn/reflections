@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -28,7 +28,7 @@ export default function Home() {
         <div>
             <div className="container">      
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
@@ -36,6 +36,11 @@ export default function Home() {
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
+                loop={true}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                  }}
             >
                 <SwiperSlide> <img src= {image1} alt="pool with sunset" className="images" /></SwiperSlide>
                 <SwiperSlide> <img src= {image2} alt="pool with sunset" /></SwiperSlide>
@@ -51,10 +56,24 @@ export default function Home() {
                 <SwiperSlide> <img src= {image12} alt="pool with sunset" /></SwiperSlide>
                 </Swiper>
             </div>
-            <div>
-                <div className="locationDiv">
-                    <h1>locations go here</h1>
+            <div className="box">  
+                <div className="locationTitle">
+                    <h1>locations</h1>
                 </div>
+                    
+                <div className="locationDiv">
+                    <ul>
+                        <li>Gallery 3 Bedroom</li>
+                        <li>Gallery 2 Bedroom</li>
+                        <li>Upper Deck 1 Bedroom</li>
+                        <li>Upper Deck Studio</li>
+                        <li>Sea Castles 2 Bedroom</li>
+                        <li>Villa</li>
+                        <li>Kensington</li>
+                        <li>Trafalgar</li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     );

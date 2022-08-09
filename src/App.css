@@ -38,3 +38,37 @@
   height: 100%;
   object-fit: cover;
 }
+
+.navbarDiv {
+  position: absolute;
+  font-size: 25px;
+  right: 5px;
+  top: 20px; 
+  color: blue;
+}
+
+.navbarDiv:hover {
+  font-size: 26px;
+}
+
+.locationTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  height: 200px;
+
+}
+.locationDiv {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  
+  
+}
+
+.box {
+  background-color:whitesmoke;
+  border: 2px solid black;
+
+}
