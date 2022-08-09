@@ -25,22 +25,32 @@ import image12 from "../../assets/images/image12.jpg";
 
 export default function Home() {
     return (
-        <div>      
+        <div>
+            <div className="container">      
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={50}
-                slidesPerView={3}
+                spaceBetween={0}
+                slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                <SwiperSlide> <img src= {image1} alt="pool with sunset" /></SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide> 
+                <SwiperSlide> <img src= {image1} alt="pool with sunset" className="images" /></SwiperSlide>
+                <SwiperSlide> <img src= {image2} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image3} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image4} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image5} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image6} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image7} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image8} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image9} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image10} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image11} alt="pool with sunset" /></SwiperSlide>
+                <SwiperSlide> <img src= {image12} alt="pool with sunset" /></SwiperSlide>
                 </Swiper>
+            </div>
             <div>
                 <div className="locationDiv">
                     <h1>locations go here</h1>
