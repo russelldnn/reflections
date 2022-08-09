@@ -60,7 +60,7 @@ export default function Home() {
             </div>
             <div className="box">  
                 <div className="locationTitle">
-                    <h1>locations</h1>
+                    <h1>Locations</h1>
                 </div>
                     
                 <div className="locationDiv">
